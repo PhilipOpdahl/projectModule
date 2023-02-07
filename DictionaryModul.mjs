@@ -1,4 +1,3 @@
-
 class Dictionary{
 
     constructor(...languages){
@@ -8,8 +7,6 @@ class Dictionary{
     }
 
     setLanguage = async function(lang){
-        // Velger språket som skal brukes.
-
         let languageFile = this.languagefiles.find( file => {
              return file.indexOf(lang) != -1
             });
@@ -20,15 +17,12 @@ class Dictionary{
     }
 
     get = function(key){
-        // Henter riktig verdi basert på key i dictionary.
         return this.dictionary[key];
     }
 
     keys = function(){
-        // retunerer alle keys i dictionary 
         return Object.keys( this.dictionary);
     }
 }
-
 
 export default Dictionary;
