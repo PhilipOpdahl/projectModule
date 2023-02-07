@@ -9,7 +9,7 @@ function testLanguages(){
     const dictionary = new Dictionary(...languages);
     dictionary.setLanguage("no");
     test(JSON.stringify(dictionary.languagefiles) === JSON.stringify(languages), "Testing setting of languages");
-    console.log(dictionary.get(key));
+    //console.log(dictionary.get(key));
 }
 
 function test(test, description){
